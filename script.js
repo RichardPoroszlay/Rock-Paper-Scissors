@@ -22,13 +22,13 @@ function getPlayerChoice() {
 function playRound(playerSelection = getPlayerChoice(), computerSelection = getComputerChoice()) {
     if(playerSelection === computerSelection) {
         return "DRAW";
-    } else if((playerSelection === "ROCK" && computerSelection === "SCISSORS") 
-    || (playerSelection === "PAPER" && computerSelection === "ROCK") 
-    || (playerSelection === "SCISSORS" && computerSelection === "PAPER")) {
+    } else if((playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
+    (playerSelection === "PAPER" && computerSelection === "ROCK") || 
+    (playerSelection === "SCISSORS" && computerSelection === "PAPER")) {
         return "PLAYER WON";
-    } else if((playerSelection === "SCISSORS" && computerSelection === "ROCK") 
-    || (playerSelection === "ROCK" && computerSelection === "PAPER")
-    || (playerSelection === "PAPER" && computerSelection === "SCISSORS")) {
+    } else if((playerSelection === "SCISSORS" && computerSelection === "ROCK")  ||
+    (playerSelection === "ROCK" && computerSelection === "PAPER") ||
+    (playerSelection === "PAPER" && computerSelection === "SCISSORS")) {
         return "COMPUTER WON";
     } else {
         return "WRONG INPUT";
