@@ -35,9 +35,37 @@ function playRound(playerSelection = getPlayerChoice(), computerSelection = getC
     }
 }
 
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
-console.log(playRound());
 
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
+
+    let displayScore = () => {
+        console.log("Player's Score: " + playerScore);
+        console.log("Computer's Score: " + computerScore);
+    };
+
+    while(playerScore !== 5 && computerScore !== 5) {
+        switch(playRound()) {
+            case "DRAW":
+                console.log("DRAW");
+                displayScore();
+                break;
+            case "PLAYER WON":
+                playerScore++;
+                console.log("PLAYER WON");
+                displayScore();
+                break;
+            case "COMPUTER WON":
+                computerScore++;
+                console.log("COMPUTER WON");
+                displayScore();
+                break;
+            default:
+                console.log("WRONG INPUT");
+        }
+    }
+    console.log("GAME HAS ENDED")
+}
+
+game();
