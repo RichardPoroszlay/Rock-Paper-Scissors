@@ -18,24 +18,26 @@ function getPlayerChoice() {
     }
 }
 
+
 function playRound(playerSelection = getPlayerChoice(), computerSelection = getComputerChoice()) {
     if(playerSelection === computerSelection) {
-        console.log("DRAW");
+        return "DRAW";
     } else if((playerSelection === "ROCK" && computerSelection === "SCISSORS") 
     || (playerSelection === "PAPER" && computerSelection === "ROCK") 
     || (playerSelection === "SCISSORS" && computerSelection === "PAPER")) {
-        console.log("PLAYER WON");
+        return "PLAYER WON";
     } else if((playerSelection === "SCISSORS" && computerSelection === "ROCK") 
     || (playerSelection === "ROCK" && computerSelection === "PAPER")
     || (playerSelection === "PAPER" && computerSelection === "SCISSORS")) {
-        console.log("COMPUTER WON");
+        return "COMPUTER WON";
     } else {
-        console.log("WRONG INPUT");
+        return "WRONG INPUT";
     }
 }
 
-playRound();
-playRound();
-playRound();
-playRound();
-playRound();
+console.log(playRound());
+console.log(playRound());
+console.log(playRound());
+console.log(playRound());
+console.log(playRound());
+
