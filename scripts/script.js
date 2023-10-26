@@ -56,7 +56,7 @@ function displayScores() {
 
 
 function checkScores() {
-    const winner = document.querySelector("#winner")
+    const winner = document.querySelector("#winner");
     if(playerScore >= 5) {
          modal.style.display = 'block';
          winner.innerText = "You won the match!";
