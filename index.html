@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <h1>rock paper scissors.</h1>
-    </div>
-    <div class="mainContent">
-        <button id="rock"><img src="resources/rock.png" alt="rock"></button>
-        <button id="paper"><img src="resources/paper.png" alt="paper"></button>
-        <button id="scissors"><img src="resources/scissors.png" alt="scissors"></button>
-        <div id="result"></div>
-        <div id="playerScore"></div>
-        <div id="computerScore"></div>
-        <div id="finalResult"></div>
-    </div>
-    <div class="footer">
-    </div>
+    <div class="contents"> 
+        <div class="header">
+            <div class="title">
+                Rock Paper Scissors
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="details">
+                <div id="result">Choose your weapon</div>
+                <div id="info">First to score 5 points wins the game</div>
+                <div class="icons">
+                    <div id="playerIcon"><img src="resources/question-mark.png" alt="playerIcon"></div>
+                    <div id="computerIcon"><img src="resources/question-mark.png" alt="computerIcon"></div>
+                </div>
+                <div class="scores">
+                    <div id="playerScore">Player: 0</div>
+                    <div id="computerScore">Computer: 0</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="rock"><img src="resources/rock.png" alt="rock"></button>
+                <button id="paper"><img src="resources/paper.png" alt="paper"></button>
+                <button id="scissors"><img src="resources/scissors.png" alt="scissors"></button>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright @ 2023 RichardPoroszlay
+            <a href="https://github.com/RichardPoroszlay" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="winner"></div>
+                <button id="newGameBtn">New Game</button>
+            </div>
+        </div>
 </body>
 </html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+* {
+    font-family: 'Istok Web', sans-serif;
+    margin: auto;
+    color: #34342d;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding: 35px;
+}
+
+.header .title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 100%;
+    float: left;
+    width: 100%;
+}
+
+/* MAIN CONTENT STYLES */
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.mainContent .details {
+    justify-content: center;
+    text-align: center;
+}
+
+.mainContent .details #result {
+    font-weight: bold;
+}
+
+.mainContent .details .icons {
+    display: flex;
+    margin-top: 50px;
+}
+
+.mainContent .details .icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.mainContent .details .scores {
+    display: flex;
+    flex: auto;
+}
+
+.mainContent .buttons {
+    display: flex;
+    gap: 80px;
+    padding: 20px;
+}
+
+.mainContent .buttons button {
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.mainContent .buttons button img{
+    width: 300px;
+    height: 300px;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 20px;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* HOVER STYLES */
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+#rock:hover {
+    background-color: rgb(174, 255, 218);
+}
+
+#paper:hover {
+    background-color: rgb(178, 187, 240);
+}
+
+#scissors:hover {
+    background-color: rgb(247, 243, 130);
+}
+
+#newGameBtn:hover {
+    background-color: rgb(235, 135, 85);
+}
+
+/* MODAL STYLES */
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    color: #34342d;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.close {
+    color: #34342d;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e1e1e1;
+}
+
+#newGameBtn {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+}
