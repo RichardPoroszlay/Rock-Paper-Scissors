@@ -1,9 +1,10 @@
 let playerScore = 0;
 let computerScore = 0;
 
+const playerIcon = document.querySelector("#playerIcon").querySelector("img");
+const computerIcon = document.querySelector("#computerIcon").querySelector("img");
 
 function getComputerChoice() {
-    const computerIcon = document.querySelector("#computerIcon").querySelector("img");
     let values = ["ROCK", "PAPER", "SCISSORS"];
     let randomize = Math.floor(Math.random() * values.length);
     
@@ -69,7 +70,6 @@ function checkScores() {
 
 function playRock() {
     const rockButton = document.querySelector("#rock");
-    const playerIcon = document.querySelector("#playerIcon").querySelector("img");
     rockButton.addEventListener("click", () => {
         let result = playRound("ROCK");
         playerIcon.src = "resources/rock.png";
@@ -82,7 +82,6 @@ function playRock() {
 
 function playPaper() {
     const paperButton = document.querySelector("#paper");
-    const playerIcon = document.querySelector("#playerIcon").querySelector("img");
     paperButton.addEventListener("click", () => {
         let result = playRound("PAPER");
         playerIcon.src = "resources/paper.png";
@@ -97,7 +96,6 @@ function playScissors() {
     const scissorsButton = document.querySelector("#scissors");
     scissorsButton.addEventListener("click", () => {
         let result = playRound("SCISSORS");
-        const playerIcon = document.querySelector("#playerIcon").querySelector("img");
         playerIcon.src = "resources/scissors.png";
         displayResult(result);
         checkResult(result);
@@ -148,6 +146,8 @@ function operateOnModal() {
 
 
 function resetGame() {
+    playerIcon.src = "resources/question-mark.png"
+    computerIcon.src = "resources/question-mark.png"
     playerScore = 0;
     computerScore = 0;
     displayScores();
