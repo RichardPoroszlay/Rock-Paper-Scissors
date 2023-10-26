@@ -155,7 +155,6 @@ function resetGame() {
 }
 
 
-
 function game() {
     playRock();
     playPaper();
