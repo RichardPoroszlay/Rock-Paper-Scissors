@@ -24,3 +24,5 @@ The icons used in the project are made by fantastic artists, who I want to menti
 - "Rock" icon made by Cuputo ([Cuputo's Flaticon page](https://www.flaticon.com/authors/cuputo))
 - "Paper" icon made by Vitaly Gorbachev ([Vitaly Gorbachev's Flaticon page](https://www.flaticon.com/authors/vitaly-gorbachev))
 - "Scissors" icon made by Pixel perfect ([Pixel perfect's Flaticon page](https://www.flaticon.com/authors/pixel-perfect))
+- Question Mark icon made by Freepik ([Freepik's Flaticon page](https://www.flaticon.com/authors/freepik))
+
