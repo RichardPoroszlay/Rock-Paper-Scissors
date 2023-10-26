@@ -14,7 +14,8 @@ If you don't know how to play the game, check out this [Wikipedia site.](https:/
 
 ## TODO❕
 
-I would like to make the project **responsive**, so the users could play it on various devices.
+- I would like to make the project **responsive**, so the users could play it on various devices.
+- I like animations, so I'll consider to add some.
 
 ## Licensing 🏛
 
