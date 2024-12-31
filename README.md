@@ -1,14 +1,10 @@
-# Rock-Paper-Scissors
+# Rock-Paper-Scissors 🪨📃✂️
 
-## Live Preview 🪨
-
-You can play with the game [HERE!](https://richardporoszlay.github.io/Rock-Paper-Scissors/)
-
-## Game Layout 📃
+## Game Layout
 
 ![Layout of the game](resources/rps.png)
 
-## Rules of the game ✂️
+## Rules of the game 
 
 If you don't know how to play the game, check out this [Wikipedia site.](https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
